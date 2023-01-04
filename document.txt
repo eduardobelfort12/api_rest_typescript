@@ -1,0 +1,33 @@
+###Iniciando projeto api-rest-typescript
+###Criando passo a passo
+1 - npm init -y
+2 - npm install -D typescript nodemon ts-node @types/express @types/node
+3 - npm install express pg typeorm dotenv reflect-metadata
+4 - npx tsc --init 
+5 - script padrão tsconfig.json {
+///////////////////////////////////	
+{
+	"compilerOptions": {
+		"target": "es2018",
+		"lib": ["es5", "es6", "ES2018"],
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"allowJs": true,
+		"outDir": "./dist",
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"noImplicitAny": true,
+		"strictPropertyInitialization": false
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist"],
+	"ts-node": {
+		"files": true
+	}
+}
+/////////////////////////////////
+}
